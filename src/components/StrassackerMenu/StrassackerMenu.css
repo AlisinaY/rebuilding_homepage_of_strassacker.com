@@ -1,0 +1,138 @@
+.s-menu__container {
+  height: auto;
+  flex-direction: column;
+  gap: 140px;
+}
+
+.s-menu {
+  margin: 80px;
+  justify-content: center;
+  gap: 110px;
+  height: 540px;
+  overflow: visible;
+}
+
+.s-menu__items {
+  width: 280px;
+  height: 540px;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.s-menu__items[data-content='Edition'] {
+  margin-top: 270px;
+}
+
+.s-menu__items[data-content='showroom'] {
+  margin-top: 270px;
+}
+
+.s-menu__items[data-content='showroom'] {
+  margin-top: 270px;
+}
+
+.s-menu__item {
+  z-index: -1;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.s-menu__sideline {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  transition: width 0.2s;
+}
+
+.s-menu__sideline--hovered {
+  width: 45px;
+  height: 2px;
+  background-color: black;
+  transition: width 0.2s;
+}
+
+.s-menu__img img {
+  width: 278px;
+  height: 400px;
+}
+
+.s-menu__heading {
+  bottom: 260px;
+}
+
+.s-menu__heading[data-content='Sakral'] {
+  right: 150px;
+}
+
+.s-menu__heading[data-content='Edition'] {
+  left: 105px;
+}
+
+.s-menu__heading[data-content='Manufaktur'] {
+  right: -63px;
+}
+
+.s-menu__heading h2 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.s-menu__text p {
+  font-weight: 700;
+}
+
+.s-menu__item--hovered {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.btn {
+  text-align: center;
+  border: 2px solid gray;
+  padding: 15px;
+  width: 230px;
+  border-radius: 50px;
+  gap: 8px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn--hovered {
+  text-align: center;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  width: 230px;
+  border-radius: 50px;
+  gap: 8px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn__content {
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.btn__content--hovered {
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.btn__sideline {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+}
+
+.btn__sideline--hovered {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+}

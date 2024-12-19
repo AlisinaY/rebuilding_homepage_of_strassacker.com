@@ -1,0 +1,97 @@
+.ns {
+  background-color: #f6f1ea;
+  margin-bottom: 50px;
+  flex-direction: column;
+  padding: 100px 100px 120px 120px;
+  gap: 75px;
+}
+
+.ns__items {
+  gap: 10px;
+  flex-direction: column;
+  width: 1035px;
+}
+
+.ns__title {
+  gap: 8px;
+}
+
+.ns__title-sideline {
+  width: 1px;
+  height: 40px;
+  background-color: black;
+}
+.ns__title h4 {
+  color: black;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.ns__title h3 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: black;
+}
+
+.ns__item {
+  flex-direction: column;
+  width: 300px;
+  height: 600px;
+  gap: 30px;
+}
+
+.ns__img-container {
+  height: 350px;
+}
+
+.ns__img-content {
+  height: 150px;
+}
+
+.ns__btn {
+  height: 50px;
+}
+
+.ns__item:nth-child(2) {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  margin: 0px 30px;
+  width: 360px;
+  align-items: center;
+}
+
+.ns__btn {
+  justify-content: end;
+  gap: 8px;
+}
+
+.clr-black {
+  color: black;
+}
+
+.ns__btn-sideline {
+  width: 25px;
+  height: 1px;
+  background-color: black;
+}
+
+.ns__img-content p {
+  font-size: 1.5rem;
+}
+
+.ns__img-sideline {
+  height: 20px;
+  width: 1px;
+  background-color: black;
+  margin-right: 10px;
+}
+
+.ns__img-date span {
+  color: lightgray;
+}
+
+.ns__img-container img {
+  width: 300px;
+  height: 350px;
+}

@@ -1,0 +1,72 @@
+.herobanner {
+  background: url(https://www.strassacker.com/img/containers/assets/vorplatz/2023-09-20_strassacker_tobias-froehner-photography-v_0073-1698238344.jpg/ba004a4781a68891eb0d6439b0251b4c.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  margin-top: 60px;
+}
+
+.herobanner__items {
+  height: 550px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.2;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.herobanner__item {
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  height: 550px;
+  position: relative;
+  z-index: 1;
+  bottom: 550px;
+  cursor: pointer;
+}
+
+.herobanner__title h1 {
+  font-size: 2rem;
+}
+
+.herobanner__text {
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.herobanner__text p {
+  font-size: 1.2rem;
+}
+
+.herobanner__title {
+  border-bottom: 1.5px solid white;
+}
+
+.herobanner__btn {
+  gap: 1.5px;
+}
+
+.herobanner__ {
+  width: 55px;
+  margin-left: 10px;
+}
+
+.herobanner__sideline {
+  width: 33px;
+  height: 1px;
+  background-color: white;
+  transition: width 0.3s;
+  float: right;
+}
+
+.herobanner__sideline--hovered {
+  width: 40px;
+  height: 1px;
+  background-color: white;
+  transition: width 0.3s;
+  float: right;
+}

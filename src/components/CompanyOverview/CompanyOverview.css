@@ -1,0 +1,165 @@
+.co-main {
+}
+
+.co-main__left {
+  width: 535px;
+  height: 510px;
+  position: sticky;
+  top: 98px;
+  margin-left: 134px;
+  background-color: white;
+  z-index: 1;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.co-main__left-title {
+  margin-top: 100px;
+  gap: 5px;
+}
+
+.co-main__left-sideline {
+  height: 30px;
+  width: 1px;
+  background-color: black;
+}
+
+.co-main__left-title:nth-child(1) h4 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+.co-main__left-heading h2 {
+  font-weight: 500;
+  font-size: 2.2rem;
+  letter-spacing: 1.4px;
+}
+
+.co-main__left-txt p {
+  font-size: 1.2rem;
+  line-height: 35px;
+}
+
+.co-main__left-btn {
+  gap: 12px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.co-main__left-btntxt {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.co-main__left-btnsideline {
+  width: 30px;
+  height: 1px;
+  background-color: black;
+}
+
+.co-main__left-btnsideline--hovered {
+  width: 35px;
+  height: 1px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.co-main__right {
+  width: 1000px;
+  height: 1470px;
+}
+
+.test {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  width: 130px;
+  height: 1470px;
+  left: 555px;
+  z-index: 1;
+}
+
+.test2 {
+  border: 1px solid lightgray;
+  border-top-left-radius: 260px;
+  border-bottom-left-radius: 260px;
+  height: 965px;
+  width: 810px;
+  background-color: white;
+  top: 100px;
+  left: 542px;
+}
+
+.test3 {
+  border: 1px solid lightgray;
+  border-top-left-radius: 110px;
+  border-bottom-left-radius: 150px;
+  height: 730px;
+  width: 670px;
+  top: 220px;
+  left: 680px;
+}
+
+.test4 {
+  background-color: white;
+  height: 700px;
+  width: 20px;
+  left: 665px;
+  top: 290px;
+}
+
+.test5 {
+  border-top: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-top-left-radius: 400px;
+  height: 50px;
+  width: 700px;
+  left: 660px;
+  bottom: 0px;
+}
+
+.co-main__imgcontainer {
+  width: 610px;
+  height: 1282px;
+  left: 740px;
+  top: 70px;
+  gap: 80px;
+}
+
+.co-main__items {
+  width: 260px;
+  flex-direction: column;
+  gap: 100px;
+}
+
+img[alt='auf dem Bild sind drei Kinder zu sehen'] {
+  width: 260px;
+  height: 150px;
+}
+
+img[alt='ein Mann mit den Produkten'] {
+  width: 260px;
+  height: 400px;
+}
+
+img[alt='ein Gruppenbild'] {
+  width: 260px;
+  height: 150px;
+}
+
+img[alt='ein Mann auf der Arbeit'] {
+  width: 260px;
+  height: 400px;
+}
+
+img[alt='Baustelle'] {
+  width: 260px;
+  height: 150px;
+  margin: 60px 0px;
+}
+
+img[alt='ein Mann auf dem Foto'] {
+  width: 260px;
+  height: 400px;
+  margin-top: 1px;
+}
