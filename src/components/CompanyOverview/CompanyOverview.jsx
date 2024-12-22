@@ -1,5 +1,5 @@
-import React from 'react';
-import './CompanyOverview.css';
+import React from "react";
+import "./CompanyOverview.css";
 
 const CompanyOverview = () => {
   const [isHovered, setIsHovered] = React.useState(false);
@@ -13,7 +13,7 @@ const CompanyOverview = () => {
   };
 
   return (
-    <div className="pos-relative d-flex  co-main">
+    <div className="d-flex pos-relative co-main">
       <div className="d-flex co-main__left">
         <div className="d-flex flex-align-center co-main__left-title">
           <div className="co-main__left-sideline"></div>
@@ -34,28 +34,26 @@ const CompanyOverview = () => {
         <div
           onMouseOut={handleMouseOut}
           onMouseOver={handleMouseOver}
-          className="d-flex flex-align-center co-main__left-btn"
-        >
+          className="d-flex flex-align-center co-main__left-btn">
           <div>
             <h4 className="co-main__left-btntxt text-uppercase">historie</h4>
           </div>
           <div
             className={
               isHovered
-                ? 'co-main__left-btnsideline--hovered'
-                : 'co-main__left-btnsideline'
-            }
-          >
+                ? "co-main__left-btnsideline--hovered"
+                : "co-main__left-btnsideline"
+            }>
             <div></div>
           </div>
         </div>
       </div>
       <div className="co-main__right"></div>
-      <div className="test pos-absolute"></div>
-      <div className="test2 pos-absolute"></div>
-      <div className="test3 pos-absolute"></div>
-      <div className="test4 pos-absolute"></div>
-      <div className="test5 pos-absolute"></div>
+      <div className="line-1 pos-absolute"></div>
+      <div className="line-2 pos-absolute"></div>
+      <div className="line-3 pos-absolute"></div>
+      <div className="line-4 pos-absolute"></div>
+      <div className="line-5 pos-absolute"></div>
       <div className="pos-absolute d-flex co-main__imgcontainer">
         <div className="d-flex co-main__items">
           <div className="co-main__item">

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import './HeroBanner.css';
+import "./HeroBanner.css";
 
 const HeroBanner = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -41,19 +41,17 @@ const HeroBanner = () => {
         <div
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
-          className="d-flex flex-align-center herobanner__btn"
-        >
+          className="d-flex flex-align-center herobanner__btn">
           <div className="herobanner__">
             <h3 className="text-uppercase">Mehr</h3>
           </div>
-          <div style={{ width: '40px' }} className="herobanner__">
+          <div style={{ width: "40px" }} className="herobanner__">
             <div
               className={
                 isHovered
-                  ? 'herobanner__sideline--hovered '
-                  : 'herobanner__sideline'
-              }
-            ></div>
+                  ? "herobanner__sideline--hovered "
+                  : "herobanner__sideline"
+              }></div>
           </div>
         </div>
       </div>

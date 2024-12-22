@@ -70,7 +70,7 @@
   height: 1470px;
 }
 
-.test {
+.line-1 {
   border-left: 1px solid lightgray;
   border-right: 1px solid lightgray;
   width: 130px;
@@ -79,7 +79,7 @@
   z-index: 1;
 }
 
-.test2 {
+.line-2 {
   border: 1px solid lightgray;
   border-top-left-radius: 260px;
   border-bottom-left-radius: 260px;
@@ -90,7 +90,7 @@
   left: 542px;
 }
 
-.test3 {
+.line-3 {
   border: 1px solid lightgray;
   border-top-left-radius: 110px;
   border-bottom-left-radius: 150px;
@@ -100,7 +100,7 @@
   left: 680px;
 }
 
-.test4 {
+.line-4 {
   background-color: white;
   height: 700px;
   width: 20px;
@@ -108,7 +108,7 @@
   top: 290px;
 }
 
-.test5 {
+.line-5 {
   border-top: 1px solid lightgray;
   border-left: 1px solid lightgray;
   border-top-left-radius: 400px;
@@ -132,34 +132,157 @@
   gap: 100px;
 }
 
-img[alt='auf dem Bild sind drei Kinder zu sehen'] {
+img[alt="auf dem Bild sind drei Kinder zu sehen"] {
   width: 260px;
   height: 150px;
 }
 
-img[alt='ein Mann mit den Produkten'] {
+img[alt="ein Mann mit den Produkten"] {
   width: 260px;
   height: 400px;
 }
 
-img[alt='ein Gruppenbild'] {
+img[alt="ein Gruppenbild"] {
   width: 260px;
   height: 150px;
 }
 
-img[alt='ein Mann auf der Arbeit'] {
+img[alt="ein Mann auf der Arbeit"] {
   width: 260px;
   height: 400px;
 }
 
-img[alt='Baustelle'] {
+img[alt="Baustelle"] {
   width: 260px;
   height: 150px;
   margin: 60px 0px;
 }
 
-img[alt='ein Mann auf dem Foto'] {
+img[alt="ein Mann auf dem Foto"] {
   width: 260px;
   height: 400px;
   margin-top: 1px;
+}
+
+@media only screen and (min-width: 1800px) {
+  .co-main {
+    margin-left: 410px;
+    justify-content: end;
+  }
+
+  .co-main__left {
+    width: 535px;
+    height: 510px;
+    position: sticky;
+    top: 96px;
+    margin-left: 0px;
+    background-color: white;
+    z-index: 1;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .co-main__right {
+    width: 1000px;
+    height: 2000px;
+  }
+
+  .line-1 {
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    width: 130px;
+    height: 2000px;
+    left: 630px;
+    z-index: 1;
+  }
+
+  .line-2 {
+    border: 1px solid lightgray;
+    border-top-left-radius: 260px;
+    border-bottom-left-radius: 260px;
+    height: 965px;
+    width: 1000px;
+    background-color: white;
+    top: 100px;
+    left: 630px;
+  }
+
+  .line-3 {
+    border: 1px solid lightgray;
+    border-top-left-radius: 110px;
+    border-bottom-left-radius: 150px;
+    height: 730px;
+    width: 900px;
+    top: 220px;
+    left: 759px;
+  }
+
+  .line-4 {
+    border: 1px solid lightgray;
+    border-top-left-radius: 260px;
+    border-bottom-left-radius: 10px;
+    height: 702px;
+    width: 1000px;
+    top: 1300px;
+    left: 630px;
+    z-index: -1;
+  }
+
+  .line-5 {
+    border: 1px solid lightgray;
+    border-top-left-radius: 110px;
+    border-bottom-left-radius: 10px;
+    height: 603px;
+    width: 900px;
+    top: 1400px;
+    left: 759px;
+    z-index: -1;
+  }
+
+  .co-main__imgcontainer {
+    width: 950px;
+    height: 1930px;
+    left: 550px;
+    top: 70px;
+    gap: 80px;
+    z-index: 3;
+  }
+
+  .co-main__items {
+    width: 433px;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  img[alt="auf dem Bild sind drei Kinder zu sehen"] {
+    width: 433px;
+    height: 280px;
+  }
+
+  img[alt="ein Mann mit den Produkten"] {
+    width: 433px;
+    height: 670px;
+  }
+
+  img[alt="ein Gruppenbild"] {
+    width: 433px;
+    height: 230px;
+  }
+
+  img[alt="ein Mann auf der Arbeit"] {
+    width: 433px;
+    height: 700px;
+  }
+
+  img[alt="Baustelle"] {
+    width: 433px;
+    height: 250px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  img[alt="ein Mann auf dem Foto"] {
+    width: 433px;
+    height: 650px;
+  }
 }
