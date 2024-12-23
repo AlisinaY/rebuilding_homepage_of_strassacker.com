@@ -1,16 +1,30 @@
 .nav {
   width: 100%;
+  height: 120px;
   position: fixed;
   top: 0;
   background-color: white;
   z-index: 6;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.nav--scrolled {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 6;
+  justify-content: space-between;
 }
 
 /* Logo */
 .nav__logo {
-  margin-top: 30px;
-  margin-left: 38px;
+  margin-left: 20px;
+}
+
+.nav__logo--scrolled {
+  margin-left: 15px;
 }
 
 .nav__img {
@@ -18,50 +32,56 @@
   cursor: pointer;
 }
 
+.nav__img--scrolled {
+  width: 75px;
+  cursor: pointer;
+}
+
 /* navbars */
 .nav__list {
   gap: 20px;
   list-style-type: none;
-  margin-left: 100px;
-  margin-top: 25px;
 }
 
 .nav__item {
-  gap: 5px;
+  gap: 3px;
   justify-content: flex-start;
-  width: 165px;
+  width: 155px;
 }
 
 .nav__link a {
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 550;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  color: black;
+  letter-spacing: 2px;
+  color: #0c0b0cfb;
 }
 
-.nav__sideline div {
+.nav__sideline {
   width: 20px;
-  height: 2px;
-  background-color: black;
+  height: 1.5px;
+  background-color: #4d0000;
   transition-timing-function: linear;
-  transition: width 0.8s;
+  transition: width 0.4s;
 }
 
 .nav__sideline--hovered {
   width: 30px;
-  height: 2px;
+  height: 1.5px;
   background-color: black;
   transition-timing-function: linear;
-  transition: width 2s;
+  transition: width 0.4s;
 }
 
 /* Hamburger */
 
 .nav__bars {
-  margin-left: 150px;
-  margin-top: 18px;
+  margin-right: 10px;
+}
+
+.nav__bars--scrolled {
+  margin-right: 10px;
 }
 
 .nav__icon {
@@ -70,6 +90,40 @@
 }
 
 @media only screen and (min-width: 1800px) {
+  .nav__container {
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 118px;
+    position: fixed;
+    z-index: 5;
+  }
+  .nav__container--scrolled {
+    background-color: white;
+    width: 100%;
+    height: 90px;
+    justify-content: center;
+    position: fixed;
+    z-index: 5;
+  }
+  .nav {
+    width: 1340px;
+    height: 118px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 6;
+    justify-content: space-between;
+  }
+  .nav--scrolled {
+    width: 1340px;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 6;
+    justify-content: space-between;
+  }
   .nav__logo {
     margin-top: 30px;
     margin-left: 0px;

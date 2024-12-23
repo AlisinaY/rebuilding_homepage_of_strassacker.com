@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './Header.css';
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -26,24 +26,27 @@ const Header = () => {
                 </div>
               </div>
               <div>
-                <h1>Traditionelles Handwerk, moderne</h1>
+                <span className="header__title">
+                  Traditionelles Handwerk, moderne
+                </span>
               </div>
               <div>
-                <h1>Fertigungstechnik</h1>
+                <span className="header__title">Fertigungstechnik</span>
               </div>
             </div>
+            <div className="test pos-absolute"></div>
             <div className=" pos-absolute d-flex flex-align-center header__sideboxes">
-              <div className="header__sidebox">
+              <div className="d-flex header__sidebox">
                 <div>
                   <span className="text-uppercase">sakral</span>
                 </div>
               </div>
-              <div className="header__sidebox">
+              <div className="d-flex header__sidebox">
                 <div>
                   <span className="text-uppercase">edition</span>
                 </div>
               </div>
-              <div className="header__sidebox">
+              <div className="d-flex header__sidebox">
                 <div>
                   <span className="text-uppercase">manufaktur</span>
                 </div>

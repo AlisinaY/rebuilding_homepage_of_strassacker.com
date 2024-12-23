@@ -1,16 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import './Modal.css';
+import "./Modal.css";
 
 const Modal = ({ children, onClose }) => {
   return ReactDOM.createPortal(
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        {children}
+      <div className="first">Hello I am Ali Sina</div>
+      <div className="second">
+        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+          {children}
+        </div>
       </div>
     </div>,
-    document.getElementById('portal-root')
+    document.getElementById("portal-root")
   );
 };
 
