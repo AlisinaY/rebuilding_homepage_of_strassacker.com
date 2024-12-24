@@ -9,7 +9,7 @@
 .ns__items {
   gap: 10px;
   flex-direction: column;
-  width: 1035px;
+  width: 1120px;
 }
 
 .ns__title {
@@ -18,7 +18,7 @@
 
 .ns__title-sideline {
   width: 1px;
-  height: 40px;
+  height: 30px;
   background-color: black;
 }
 .ns__title h4 {
@@ -34,64 +34,90 @@
   color: black;
 }
 
-.ns__item {
-  flex-direction: column;
-  width: 300px;
-  height: 600px;
-  gap: 30px;
+.ns-container {
+  width: 1120px;
+  justify-content: space-between;
+  gap: 19px;
 }
 
-.ns__img-container {
-  height: 350px;
-}
-
-.ns__img-content {
-  height: 150px;
-}
-
-.ns__btn {
-  height: 50px;
-}
-
-.ns__item:nth-child(2) {
-  border-right: 1px solid white;
+.ns-container__line {
+  width: 400px;
+  top: 0px;
+  left: 32.2%;
+  height: 550px;
   border-left: 1px solid white;
-  margin: 0px 30px;
-  width: 360px;
-  align-items: center;
+  border-right: 1px solid white;
 }
 
-.ns__btn {
+.ns-container__item {
+  width: 330px;
+  height: 550px;
+
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.ns-container__img img {
+  width: 330px;
+  height: 330px;
+}
+
+.ns-container__desc {
+}
+
+.ns-container__txt {
+  width: 80%;
+
+  text-align: left;
+}
+
+.ns-container__txt p {
+  font-size: 1.5rem;
+}
+
+.ns-container__date {
+  width: 100%;
+  gap: 8px;
+}
+
+.ns-container__datesideline {
+  height: 25px;
+  width: 2px;
+}
+
+.ns-container__datesideline div {
+  height: 25px;
+  width: 2px;
+  background-color: gray;
+}
+
+.ns-container__date-date span {
+  font-size: 15px;
+  color: lightgray;
+}
+
+.ns-container__btn {
+  width: 100%;
+
   justify-content: end;
   gap: 8px;
 }
 
-.clr-black {
+.ns-container__btn-txt:nth-child(1) span {
   color: black;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.ns__btn-sideline {
-  width: 25px;
-  height: 1px;
+.ns-container__btn-sideline {
+  width: 40px;
+  height: 2px;
   background-color: black;
 }
 
-.ns__img-content p {
-  font-size: 1.5rem;
-}
-
-.ns__img-sideline {
-  height: 20px;
-  width: 1px;
+.ns-container__bnt-sideline div {
+  width: 30px;
+  height: 2px;
   background-color: black;
-  margin-right: 10px;
-}
-
-.ns__img-date span {
-  color: lightgray;
-}
-
-.ns__img-container img {
-  width: 300px;
-  height: 350px;
 }
