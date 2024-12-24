@@ -28,10 +28,9 @@
   letter-spacing: 2px;
 }
 
-.ns__title h3 {
-  font-weight: 500;
+.ns__title h2 {
   font-size: 2rem;
-  color: black;
+  font-weight: 300;
 }
 
 .ns-container {
@@ -40,13 +39,20 @@
   gap: 19px;
 }
 
-.ns-container__line {
-  width: 400px;
+.ns-container__line-1 {
+  width: 1px;
   top: 0px;
   left: 32.2%;
   height: 550px;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  background-color: white;
+}
+
+.ns-container__line-2 {
+  width: 1px;
+  top: 0px;
+  left: 67.5%;
+  height: 550px;
+  background-color: white;
 }
 
 .ns-container__item {
@@ -58,9 +64,23 @@
   gap: 15px;
 }
 
-.ns-container__img img {
+.ns-container__imgs {
   width: 330px;
   height: 330px;
+
+  overflow: hidden;
+}
+
+.ns-container__img {
+  width: 330px;
+  height: 330px;
+}
+
+.ns-container__img--hovered {
+  width: 330px;
+  height: 330px;
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
 
 .ns-container__desc {
@@ -114,10 +134,19 @@
   width: 40px;
   height: 2px;
   background-color: black;
+  transition: width 0.4s;
 }
 
-.ns-container__bnt-sideline div {
+.ns-container__btn-sideline {
   width: 30px;
   height: 2px;
   background-color: black;
+  transition: width 0.4s;
+}
+
+.ns-container__btn-sideline--hovered {
+  width: 40px;
+  height: 2px;
+  background-color: black;
+  transition: width 0.4s;
 }

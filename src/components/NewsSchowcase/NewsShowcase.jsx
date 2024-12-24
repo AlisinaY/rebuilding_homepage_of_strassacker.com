@@ -22,6 +22,18 @@ const newsShocaseData = [
 ];
 
 export default function NewsSchowcase() {
+  const [hoverOver, setHoverOver] = React.useState(null);
+
+  const handleMouseOver = (index) => {
+    setHoverOver(index);
+  };
+
+  const handleMouseOut = () => {
+    setHoverOver(null);
+  };
+
+  console.log(hoverOver);
+
   return (
     <>
       <div className="d-flex flex-align-center ns">
@@ -33,17 +45,29 @@ export default function NewsSchowcase() {
             </div>
           </div>
           <div className="ns__title">
-            <h3>Aktuelles</h3>
+            <h2>Aktuelles</h2>
           </div>
         </div>
 
         <div className="d-flex flex-align-center pos-relative ns-container">
-          <div className="pos-absolute ns-container__line"></div>
+          <div className="pos-absolute ns-container__line-1"></div>
+          <div className="pos-absolute ns-container__line-2"></div>
           {newsShocaseData.map((item, i) => {
             return (
-              <div className="d-flex flex-align-center ns-container__item">
-                <div className="ns-container__img">
-                  <img src={item.img} />
+              <div
+                onMouseOver={() => handleMouseOver(i)}
+                onMouseOut={handleMouseOut}
+                className="d-flex flex-align-center ns-container__item"
+                key={i}>
+                <div className="ns-container__imgs">
+                  <img
+                    className={
+                      hoverOver === i
+                        ? "ns-container__img--hovered"
+                        : "ns-container__img"
+                    }
+                    src={item.img}
+                  />
                 </div>
                 <div className="ns-container__desc">
                   <div className="ns-container__txt">
@@ -66,7 +90,12 @@ export default function NewsSchowcase() {
                       <span>Ansehen</span>
                     </div>
                   </div>
-                  <div className="ns-container__btn-sideline">
+                  <div
+                    className={
+                      hoverOver === i
+                        ? "ns-container__btn-sideline--hovered"
+                        : "ns-container__btn-sideline"
+                    }>
                     <div></div>
                   </div>
                 </div>
