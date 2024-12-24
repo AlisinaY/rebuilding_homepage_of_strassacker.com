@@ -16,23 +16,37 @@
   gap: 8px;
 }
 
-.gs__container-sideline {
+.gs__container-side-line {
+  width: 2px;
   height: 25px;
-  width: 1px;
   background-color: black;
+}
+
+.gs__container-sideline {
+  width: 33px;
+  height: 2px;
+  background-color: black;
+  transition: width 0.5s;
+}
+
+.gs__container-sideline--hovered {
+  width: 43px;
+  height: 2px;
+  background-color: black;
+  transition: width 0.5s;
 }
 
 .gs__container-txt {
   font-weight: 200;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 1rem;
   color: black;
+  line-height: 1.8;
 }
 
-.gs__container-heading h2 {
-  font-size: 2rem;
-  font-weight: 500;
-  letter-spacing: 1px;
+.gs__container-heading h4 {
+  font-size: 2.5rem;
+  font-weight: 100;
 }
 
 .gs__container-menu {
@@ -49,7 +63,7 @@
   align-items: end;
 }
 
-.gs__container-items[data-content='showroom'] {
+.gs__container-items[data-content="showroom"] {
   margin-top: 270px;
 }
 
@@ -83,8 +97,9 @@
   width: 280px;
   height: 400px;
   transform: scale(1.03);
+  transition: transform 0.5s;
 }
 
 .gs__container-btn {
-  margin-top: 70px;
+  margin-top: 120px;
 }
