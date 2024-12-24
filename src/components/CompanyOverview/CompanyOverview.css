@@ -2,13 +2,11 @@
 }
 
 .co-main__left {
-  width: 535px;
-  height: 510px;
+  width: 550px;
+  height: 550px;
   position: sticky;
   top: 98px;
-  margin-left: 134px;
-  background-color: white;
-  z-index: 1;
+  margin-left: 138px;
   gap: 15px;
   flex-direction: column;
 }
@@ -36,8 +34,11 @@
   letter-spacing: 1.4px;
 }
 
+.co-main__left-txt {
+}
+
 .co-main__left-txt p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 35px;
 }
 
@@ -48,19 +49,19 @@
 }
 
 .co-main__left-btntxt {
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
 .co-main__left-btnsideline {
   width: 30px;
-  height: 1px;
+  height: 2px;
   background-color: black;
 }
 
 .co-main__left-btnsideline--hovered {
   width: 35px;
-  height: 1px;
+  height: 2px;
   background-color: black;
   cursor: pointer;
 }
@@ -76,7 +77,7 @@
   width: 130px;
   height: 1470px;
   left: 555px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .line-2 {
@@ -85,9 +86,9 @@
   border-bottom-left-radius: 260px;
   height: 965px;
   width: 810px;
-  background-color: white;
   top: 100px;
-  left: 542px;
+  left: 555px;
+  z-index: 1;
 }
 
 .line-3 {
