@@ -7,7 +7,7 @@
 .cs-main__header {
   width: 1060px;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .cs-main__items {
@@ -15,11 +15,13 @@
 }
 
 .cs-main__items-txt {
-  letter-spacing: 2px;
+  letter-spacing: 2.4px;
+  font-size: 1.1rem;
+  font-weight: 100;
 }
 
 .cs-main__heading h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 
@@ -35,58 +37,83 @@
 }
 
 .cs-main__left {
+  background-color: white;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
 }
 
 .cs-main__img-container {
-  width: 350px;
+  width: 330px;
   border: 1px solid white;
   overflow: hidden;
 }
 
 .cs-main__img {
-  width: 350px;
-  height: 450px;
+  width: 330px;
+  height: 460px;
 }
 
-.cs-main__img:hover {
-  width: 350px;
-  height: 450px;
+.cs-main__img--hovered {
+  width: 330px;
+  height: 460px;
   transform: scale(1.03);
+  transition: transform 0.5s ease-in-out;
 }
 
 .cs-main__middle {
   width: 100%;
-  margin: 0px 100px;
 }
 
 .cs-main__middleline {
   width: 1px;
   height: 100%;
   background-color: black;
-  left: 50%;
   z-index: 1;
+  right: 672px;
 }
 
 .cs-main__title {
-  width: 100%;
+  width: 1px;
   height: 100px;
   top: 40%;
+  right: 672px;
   background-color: white;
-  justify-content: space-between;
   z-index: 2;
+}
+
+.cs-main__title-heading h2 {
+  font-weight: 400;
+  font-size: 2.3rem;
 }
 
 .cs-main__item {
   flex-direction: column;
   gap: 25px;
+  background-color: white;
+  width: 340px;
 }
 
 .cs-main__title-text {
   gap: 7px;
 }
 
+.cs-main__title-txt {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
 .cs-main__title-sideline {
   width: 25px;
-  height: 1px;
+  height: 1.7px;
   background-color: black;
+  transition: width 0.5s;
+}
+
+.cs-main__title-sideline--hovered {
+  width: 35px;
+  height: 1.7px;
+  background-color: black;
+  transition: width 0.5s;
 }
