@@ -1,12 +1,10 @@
 .cs-main {
   margin: 70px 0px;
-  flex-direction: column;
   gap: 80px;
 }
 
 .cs-main__header {
   width: 1060px;
-  flex-direction: column;
   gap: 20px;
 }
 
@@ -36,14 +34,6 @@
   margin-left: 9px;
 }
 
-.cs-main__left {
-  background-color: white;
-}
-
-.row-reverse {
-  flex-direction: row-reverse;
-}
-
 .cs-main__img-container {
   width: 330px;
   border: 1px solid white;
@@ -53,13 +43,11 @@
 .cs-main__img {
   width: 330px;
   height: 460px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .cs-main__img--hovered {
-  width: 330px;
-  height: 460px;
   transform: scale(1.03);
-  transition: transform 0.5s ease-in-out;
 }
 
 .cs-main__middle {
@@ -89,7 +77,6 @@
 }
 
 .cs-main__item {
-  flex-direction: column;
   gap: 25px;
   background-color: white;
   width: 340px;
@@ -108,12 +95,9 @@
   width: 25px;
   height: 1.7px;
   background-color: black;
-  transition: width 0.5s;
+  transition: width 0.5s ease-in-out;
 }
 
 .cs-main__title-sideline--hovered {
   width: 35px;
-  height: 1.7px;
-  background-color: black;
-  transition: width 0.5s;
 }

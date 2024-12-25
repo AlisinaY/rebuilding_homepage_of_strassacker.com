@@ -28,7 +28,6 @@ video {
 }
 
 .header__items {
-  flex-direction: column;
   gap: 10px;
 }
 
@@ -62,13 +61,12 @@ h3 {
   height: 500px;
   width: 60px;
   margin-left: 168px;
-  flex-direction: column;
   left: 995px;
   bottom: 0px;
   justify-content: space-around;
 }
 
-.test {
+.background {
   height: 500px;
   width: 60px;
   margin-left: 168px;
@@ -83,7 +81,6 @@ h3 {
   width: 166px;
   rotate: 270deg;
   align-items: end;
-  justify-content: center;
 }
 
 .header__sidebox div {
@@ -113,18 +110,13 @@ span:hover {
 
 @media only screen and (min-width: 1800px) {
   .header {
-    background-color: white;
     height: 800px;
     margin-top: 138px;
-    z-index: -1;
     width: 1635px;
   }
 
   video {
     height: 800px;
-    width: 100%;
-    border-top-left-radius: 40px;
-    object-fit: cover;
   }
 
   .header__heading {
@@ -134,22 +126,16 @@ span:hover {
   }
 
   .header__sideboxes {
-    border-left: 1px solid white;
     height: 800px;
     width: 60px;
     margin-left: 168px;
-    flex-direction: column;
     left: 1290px;
     bottom: 0px;
-    justify-content: space-around;
   }
 
   .header__sidebox {
     height: 50px;
     width: 266px;
-    rotate: 270deg;
-    align-items: end;
-    justify-content: center;
   }
 
   .test {
@@ -158,7 +144,5 @@ span:hover {
     margin-left: 168px;
     left: 1290px;
     bottom: 0px;
-    background-color: black;
-    opacity: 0.3;
   }
 }

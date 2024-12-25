@@ -1,7 +1,7 @@
 import React from "react";
 import "./CompanyOverview.css";
 
-const CompanyOverview = () => {
+export default function CompanyOverview() {
   const [isHovered, setIsHovered] = React.useState(false);
 
   const handleMouseOver = () => {
@@ -14,7 +14,7 @@ const CompanyOverview = () => {
 
   return (
     <div className="d-flex pos-relative co-main">
-      <div className="d-flex co-main__left">
+      <div className="d-flex flex-column pos-sticky co-main__left">
         <div className="d-flex flex-align-center co-main__left-title">
           <div className="co-main__left-sideline"></div>
           <div>
@@ -34,7 +34,7 @@ const CompanyOverview = () => {
         <div
           onMouseOut={handleMouseOut}
           onMouseOver={handleMouseOver}
-          className="d-flex flex-align-center co-main__left-btn">
+          className="d-flex flex-align-center cursor-pointer co-main__left-btn">
           <div>
             <h4 className="co-main__left-btntxt text-uppercase">historie</h4>
           </div>
@@ -55,7 +55,7 @@ const CompanyOverview = () => {
       <div className="line-4 pos-absolute"></div>
       <div className="line-5 pos-absolute"></div>
       <div className="pos-absolute d-flex co-main__imgcontainer">
-        <div className="d-flex co-main__items">
+        <div className="d-flex flex-column  co-main__items">
           <div className="co-main__item">
             <img
               src="https://www.strassacker.com/img/containers/assets/archiv/lemonize/demo/home/10_ernst_strassacker_mit_enkeln.png/c54869ad5514b547ad2e7e6f0e5e9e3d.webp"
@@ -75,7 +75,7 @@ const CompanyOverview = () => {
             />
           </div>
         </div>
-        <div className="d-flex co-main__items">
+        <div className="d-flex flex-column co-main__items">
           <div className="co-main__item">
             <img
               src="https://www.strassacker.com/img/containers/assets/archiv/lemonize/demo/home/6_drueckerei_um_1935.png/b27d611c68faf6d8dedc2337ed0a0262.webp"
@@ -98,6 +98,4 @@ const CompanyOverview = () => {
       </div>
     </div>
   );
-};
-
-export default CompanyOverview;
+}

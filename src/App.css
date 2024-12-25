@@ -12,27 +12,54 @@ body {
 }
 
 /* Utilities */
-
 .pos-relative {
   position: relative;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.d-none {
-  display: none;
-}
-
-.flex-align-center {
-  align-items: center;
 }
 
 .pos-absolute {
   position: absolute;
 }
 
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-sticky {
+  position: sticky;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-content-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

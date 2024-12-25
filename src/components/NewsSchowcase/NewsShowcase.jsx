@@ -32,8 +32,6 @@ export default function NewsSchowcase() {
     setHoverOver(null);
   };
 
-  console.log(hoverOver);
-
   return (
     <>
       <div className="d-flex flex-align-center ns">
@@ -61,11 +59,9 @@ export default function NewsSchowcase() {
                 key={i}>
                 <div className="ns-container__imgs">
                   <img
-                    className={
-                      hoverOver === i
-                        ? "ns-container__img--hovered"
-                        : "ns-container__img"
-                    }
+                    className={`ns-container__img ${
+                      hoverOver === i ? "ns-container__img--hovered" : ""
+                    }`}
                     src={item.img}
                   />
                 </div>
@@ -91,11 +87,11 @@ export default function NewsSchowcase() {
                     </div>
                   </div>
                   <div
-                    className={
+                    className={`ns-container__btn-sideline ${
                       hoverOver === i
                         ? "ns-container__btn-sideline--hovered"
-                        : "ns-container__btn-sideline"
-                    }>
+                        : ""
+                    } `}>
                     <div></div>
                   </div>
                 </div>

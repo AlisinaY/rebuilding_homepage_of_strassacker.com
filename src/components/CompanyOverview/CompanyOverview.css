@@ -1,14 +1,9 @@
-.co-main {
-}
-
 .co-main__left {
   width: 550px;
   height: 550px;
-  position: sticky;
   top: 98px;
   margin-left: 138px;
   gap: 15px;
-  flex-direction: column;
 }
 
 .co-main__left-title {
@@ -45,7 +40,6 @@
 .co-main__left-btn {
   gap: 12px;
   margin-top: 20px;
-  cursor: pointer;
 }
 
 .co-main__left-btntxt {
@@ -125,11 +119,11 @@
   left: 740px;
   top: 70px;
   gap: 80px;
+  z-index: 3;
 }
 
 .co-main__items {
   width: 260px;
-  flex-direction: column;
   gap: 100px;
 }
 
@@ -174,13 +168,11 @@ img[alt="ein Mann auf dem Foto"] {
   .co-main__left {
     width: 535px;
     height: 510px;
-    position: sticky;
     top: 96px;
     margin-left: 0px;
     background-color: white;
     z-index: 1;
     gap: 15px;
-    flex-direction: column;
   }
 
   .co-main__right {
@@ -251,7 +243,6 @@ img[alt="ein Mann auf dem Foto"] {
 
   .co-main__items {
     width: 433px;
-    flex-direction: column;
     gap: 100px;
   }
 

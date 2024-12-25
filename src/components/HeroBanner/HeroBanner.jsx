@@ -16,11 +16,11 @@ const HeroBanner = () => {
   return (
     <div className="pos-relative herobanner">
       <div className="d-flex flex-align-center herobanner__items"></div>
-      <div className="pos-absolute d-flex flex-align-center herobanner__item">
+      <div className="pos-absolute d-flex flex-align-center flex-column flex-content-center cursor-pointer herobanner__item">
         <div className="herobanner__title">
           <h1 className="text-uppercase">vision form geben</h1>
         </div>
-        <div className="d-flex flex-align-center herobanner__text">
+        <div className="d-flex flex-align-center flex-content-center flex-column herobanner__text">
           <div>
             <p>
               Wir realisieren Auftragsarbeiten international renommierter
@@ -47,11 +47,9 @@ const HeroBanner = () => {
           </div>
           <div style={{ width: "40px" }} className="herobanner__">
             <div
-              className={
-                isHovered
-                  ? "herobanner__sideline--hovered "
-                  : "herobanner__sideline"
-              }></div>
+              className={`herobanner__sideline ${
+                isHovered ? "herobanner__sideline--hovered" : ""
+              }`}></div>
           </div>
         </div>
       </div>

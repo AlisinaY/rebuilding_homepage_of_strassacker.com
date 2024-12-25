@@ -2,18 +2,6 @@ import React, { useState } from "react";
 
 import Footer from "../Footer/Footer";
 import "./CareerShowcase.css";
-import { hover } from "@testing-library/user-event/dist/hover";
-
-const careeerShowcasedata = [
-  {
-    img: "https://www.strassacker.com/img/containers/assets/karriere/k-0.jpg/c7f967139f5e47dd731796f1b54809d6.webp",
-    text: "Karriere"
-  },
-  {
-    img: "https://www.strassacker.com/img/containers/assets/karriere/88.jpg/3a18e3676d34a5f8283dca388e8ae006.webp",
-    text: "Offene Stellen"
-  }
-];
 
 export default function CareerShowcase() {
   const [hovered, setHovered] = useState(null);
@@ -29,9 +17,9 @@ export default function CareerShowcase() {
   return (
     <>
       {/* Career Show Case Main */}
-      <div className="d-flex flex-align-center cs-main">
+      <div className="d-flex flex-align-center flex-column cs-main">
         {/* CS-Main Header div */}
-        <div className=" d-flex  cs-main__header">
+        <div className=" d-flex flex-column cs-main__header">
           <div className="d-flex flex-align-center cs-main__items">
             <div className="d-flex flex-align-center cs-main__sideline">
               <div></div>
@@ -48,28 +36,33 @@ export default function CareerShowcase() {
         </div>
         {/* CS-Main Container*/}
         <div className="d-flex cs-main__container">
-          {careeerShowcasedata.map((item, index) => {
+          {[
+            {
+              img: "https://www.strassacker.com/img/containers/assets/karriere/k-0.jpg/c7f967139f5e47dd731796f1b54809d6.webp",
+              text: "Karriere"
+            },
+            {
+              img: "https://www.strassacker.com/img/containers/assets/karriere/88.jpg/3a18e3676d34a5f8283dca388e8ae006.webp",
+              text: "Offene Stellen"
+            }
+          ].map((item, index) => {
             return (
               <div
-                onMouseOver={function () {
+                onMouseOver={() => {
                   handleMouseOver(index);
                 }}
                 onMouseOut={handleMouseOut}
-                className={
-                  item.text === "Offene Stellen"
-                    ? "d-flex flex-align-center cs-main__left row-reverse"
-                    : "d-flex flex-align-center cs-main__left"
-                }>
+                className={`d-flex flex-align-center cursor-pointer ${
+                  item.text === "Offene Stellen" ? "row-reverse" : ""
+                }`}>
                 <div className="cs-main__img-container">
                   <img
-                    className={
-                      hovered === index
-                        ? "cs-main__img--hovered"
-                        : "cs-main__img"
-                    }
+                    className={`cs-main__img ${
+                      hovered === index ? "cs-main__img--hovered" : ""
+                    }`}
                     src={item.img}></img>
                 </div>
-                <div className="d-flex flex-align-center cs-main__item">
+                <div className="d-flex flex-align-center flex-column cs-main__item">
                   <div className="cs-main__title-heading">
                     <h2> {item.text} </h2>
                   </div>
@@ -78,11 +71,11 @@ export default function CareerShowcase() {
                       mehr
                     </div>
                     <div
-                      className={
+                      className={`cs-main__title-sideline ${
                         hovered === index
                           ? "cs-main__title-sideline--hovered"
-                          : "cs-main__title-sideline"
-                      }>
+                          : ""
+                      }`}>
                       <div></div>
                     </div>
                   </div>

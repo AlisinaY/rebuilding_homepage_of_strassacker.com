@@ -1,5 +1,4 @@
 .gs__container {
-  flex-direction: column;
   gap: 40px;
   background-image: url(https://www.strassacker.com/assets/teaser-gradient.webp);
   padding: 80px 0px;
@@ -8,7 +7,6 @@
 .gs__container-title {
   height: auto;
   width: 1060px;
-  flex-direction: column;
   gap: 20px;
 }
 
@@ -31,9 +29,6 @@
 
 .gs__container-sideline--hovered {
   width: 43px;
-  height: 2px;
-  background-color: black;
-  transition: width 0.5s;
 }
 
 .gs__container-txt {
@@ -50,16 +45,13 @@
 }
 
 .gs__container-menu {
-  justify-content: center;
   gap: 110px;
   height: 540px;
   overflow: visible;
 }
 
 .gs__container-items {
-  gap: 8px;
-  flex-direction: column;
-  justify-content: center;
+  gap: 10px;
   align-items: end;
 }
 
@@ -71,10 +63,9 @@
   gap: 8px;
 }
 
-.gs__container-hsideline {
-  width: 25px;
-  height: 1px;
-  background-color: black;
+.gs__container-heading__title {
+  font-size: 18px;
+  letter-spacing: 2px;
 }
 
 .gs__container-heading:nth-child(1) {
@@ -82,22 +73,20 @@
   font-size: 1.5rem;
 }
 
-.gs__container-img img {
-  width: 280px;
-}
-
 .gs__container-img {
   width: 280px;
   height: 400px;
   overflow: hidden;
-  border: 1px solid white;
 }
 
-.gs__container-img--hovered:hover {
+.gs__container-img img {
   width: 280px;
   height: 400px;
-  transform: scale(1.03);
   transition: transform 0.5s;
+}
+
+.gs__container-img--hovered {
+  transform: scale(1.03);
 }
 
 .gs__container-btn {

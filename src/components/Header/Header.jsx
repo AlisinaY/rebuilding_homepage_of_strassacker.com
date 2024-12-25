@@ -16,7 +16,7 @@ const Header = () => {
             </video>
           </div>
           <div className="pos-absolute d-flex flex-align-center header__heading">
-            <div className="d-flex header__items">
+            <div className="d-flex flex-column header__items">
               <div className="d-flex flex-align-center header__item">
                 <div className="header__sideline">
                   <div></div>
@@ -34,19 +34,19 @@ const Header = () => {
                 <span className="header__title">Fertigungstechnik</span>
               </div>
             </div>
-            <div className="test pos-absolute"></div>
-            <div className=" pos-absolute d-flex flex-align-center header__sideboxes">
-              <div className="d-flex header__sidebox">
+            <div className="background pos-absolute"></div>
+            <div className=" pos-absolute d-flex flex-align-center flex-column header__sideboxes">
+              <div className="d-flex flex-content-center header__sidebox">
                 <div>
                   <span className="text-uppercase">sakral</span>
                 </div>
               </div>
-              <div className="d-flex header__sidebox">
+              <div className="d-flex flex-content-center header__sidebox">
                 <div>
                   <span className="text-uppercase">edition</span>
                 </div>
               </div>
-              <div className="d-flex header__sidebox">
+              <div className="d-flex flex-content-center header__sidebox">
                 <div>
                   <span className="text-uppercase">manufaktur</span>
                 </div>
