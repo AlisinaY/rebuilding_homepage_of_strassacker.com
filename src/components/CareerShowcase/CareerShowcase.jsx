@@ -52,6 +52,7 @@ export default function CareerShowcase() {
                   handleMouseOver(index);
                 }}
                 onMouseOut={handleMouseOut}
+                key={index}
                 className={`d-flex flex-align-center cursor-pointer ${
                   item.text === "Offene Stellen" ? "row-reverse" : ""
                 }`}>
