@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import Modal from "./Modal";
-
 import "./Navigation.css";
 
 const Navigation = () => {
@@ -51,16 +50,16 @@ const Navigation = () => {
   return (
     <>
       <div
-        className={`d-flex flex-align-center ${
-          scrolled ? "nav__container--scrolled" : "nav__container"
+        className={`d-flex flex-align-center pos-fixed nav__container ${
+          scrolled ? "nav__container--scrolled" : ""
         }`}>
         <div
-          className={`d-flex flex-align-center ${
-            scrolled ? "nav--scrolled" : "nav"
+          className={`d-flex flex-align-center pos-fixed nav ${
+            scrolled ? "nav--scrolled" : ""
           }`}>
           <div className={`${scrolled ? "nav__logo--scrolled" : "nav__logo"}`}>
             <img
-              className={`${scrolled ? "nav__img--scrolled" : "nav__img"}`}
+              className={`nav__img ${scrolled ? "nav__img--scrolled" : ""}`}
               src="https://www.strassacker.com/icons/archiv/lemonize/logos/str-logo.svg"
               alt="This is the Logo"
             />
@@ -73,17 +72,17 @@ const Navigation = () => {
                     onMouseOver={() => handleMouseOver(i)}
                     onMouseOut={handleMouseOut}
                     key={i}
-                    className="d-flex flex-align-center nav__item">
+                    className="d-flex flex-align-center cursor-pointer nav__item">
                     <div
-                      className={
-                        hoveredIndex === i
-                          ? "nav__sideline--hovered"
-                          : "nav__sideline"
-                      }>
+                      className={`nav__sideline ${
+                        hoveredIndex === i ? "nav__sideline--hovered" : ""
+                      } `}>
                       <div></div>
                     </div>
                     <div className="nav__link">
-                      <Link to="#"> {item} </Link>
+                      <Link className="text-uppercase" to="#">
+                        {item}
+                      </Link>
                     </div>
                   </li>
                 );
