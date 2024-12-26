@@ -7,7 +7,7 @@
 }
 
 .co-main__left-title {
-  margin-top: 100px;
+  margin-top: 85px;
   gap: 5px;
 }
 
@@ -166,47 +166,27 @@ img[alt="ein Mann auf dem Foto"] {
   }
 
   .co-main__left {
-    width: 535px;
-    height: 510px;
-    top: 96px;
     margin-left: 0px;
-    background-color: white;
-    z-index: 1;
-    gap: 15px;
   }
 
   .co-main__right {
-    width: 1000px;
     height: 2000px;
   }
 
   .line-1 {
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
     width: 130px;
     height: 2000px;
     left: 630px;
-    z-index: 1;
   }
 
   .line-2 {
-    border: 1px solid lightgray;
-    border-top-left-radius: 260px;
-    border-bottom-left-radius: 260px;
     height: 965px;
     width: 1000px;
-    background-color: white;
-    top: 100px;
     left: 630px;
   }
 
   .line-3 {
-    border: 1px solid lightgray;
-    border-top-left-radius: 110px;
-    border-bottom-left-radius: 150px;
-    height: 730px;
     width: 900px;
-    top: 220px;
     left: 759px;
   }
 
@@ -236,14 +216,10 @@ img[alt="ein Mann auf dem Foto"] {
     width: 950px;
     height: 1930px;
     left: 550px;
-    top: 70px;
-    gap: 80px;
-    z-index: 3;
   }
 
   .co-main__items {
     width: 433px;
-    gap: 100px;
   }
 
   img[alt="auf dem Bild sind drei Kinder zu sehen"] {
