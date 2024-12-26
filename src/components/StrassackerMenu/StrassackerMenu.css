@@ -1,12 +1,9 @@
 .s-menu__container {
-  height: auto;
-  flex-direction: column;
   gap: 140px;
 }
 
 .s-menu {
   margin: 80px;
-  justify-content: center;
   gap: 110px;
   height: 540px;
   overflow: visible;
@@ -15,20 +12,11 @@
 .s-menu__items {
   width: 280px;
   height: 540px;
-  flex-direction: column;
   gap: 20px;
   cursor: pointer;
 }
 
 .s-menu__items[data-content="Edition"] {
-  margin-top: 270px;
-}
-
-.s-menu__items[data-content="showroom"] {
-  margin-top: 270px;
-}
-
-.s-menu__items[data-content="showroom"] {
   margin-top: 270px;
 }
 
@@ -51,9 +39,6 @@
 
 .s-menu__sideline--hovered {
   width: 45px;
-  height: 2px;
-  background-color: black;
-  transition: width 0.2s;
 }
 
 .s-menu__img img {
@@ -91,7 +76,6 @@
   width: 100%;
   height: 100%;
   background-color: white;
-  justify-content: center;
   opacity: 0.8;
 }
 
@@ -108,25 +92,12 @@
 }
 
 .btn--hovered {
-  text-align: center;
   border: 2px solid black;
   background-color: black;
   color: white;
-  padding: 15px;
-  width: 220px;
-  height: 65px;
-  border-radius: 50px;
-  gap: 8px;
-  justify-content: center;
-  cursor: pointer;
 }
 
 .btn__content {
-  font-size: 1rem;
-  letter-spacing: 2px;
-}
-
-.btn__content--hovered {
   font-size: 1rem;
   letter-spacing: 2px;
 }
@@ -139,6 +110,5 @@
 
 .btn__sideline--hovered {
   width: 40px;
-  height: 2px;
   background-color: white;
 }
