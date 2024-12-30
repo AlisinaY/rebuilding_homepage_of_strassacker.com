@@ -10,13 +10,14 @@ const Header = () => {
               autoPlay
               muted
               loop
+              playsInline
               type="video/mp4"
               src="https://www.strassacker.com/s3/1014-(1)(1)-1733399858.mp4"
             />
           </div>
         </div>
         <div className="d-flex flex-align-center flex-row pos-absolute header__title">
-          <div className="header__items">
+          <div className="d-flex header__items">
             <div className="d-flex flex-align-center header__item">
               <div className="header__sideline">
                 <div></div>

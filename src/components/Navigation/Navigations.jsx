@@ -42,7 +42,9 @@ const Navigation = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    if (window.innerWidth > 1030) {
+      window.addEventListener("scroll", handleScroll);
+    }
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
