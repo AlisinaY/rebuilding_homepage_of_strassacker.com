@@ -1,9 +1,10 @@
 .co-main__left {
-  width: 550px;
-  height: 550px;
+  width: 30vw;
+  height: 90vh;
   top: 98px;
   margin-left: 138px;
   gap: 15px;
+  overflow: hidden;
 }
 
 .co-main__left-title {
@@ -30,10 +31,11 @@
 }
 
 .co-main__left-txt {
+  width: 30vw;
 }
 
 .co-main__left-txt p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 35px;
 }
 
@@ -61,7 +63,7 @@
 }
 
 .co-main__right {
-  width: 1000px;
+  width: 50vw;
   height: 1470px;
 }
 
@@ -252,5 +254,26 @@ img[alt="ein Mann auf dem Foto"] {
   img[alt="ein Mann auf dem Foto"] {
     width: 433px;
     height: 650px;
+  }
+}
+
+@media only screen and (max-width: 1278px) {
+  .line-1 {
+    display: none;
+  }
+  .line-2 {
+    display: none;
+  }
+  .line-3 {
+    display: none;
+  }
+  .line-4 {
+    display: none;
+  }
+  .line-5 {
+    display: none;
+  }
+  .co-main__left {
+    margin-left: 90px;
   }
 }

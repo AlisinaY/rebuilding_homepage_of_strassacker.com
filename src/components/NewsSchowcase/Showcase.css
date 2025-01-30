@@ -1,4 +1,5 @@
 .ns {
+  width: 100vw;
   background-color: #f6f1ea;
   margin-bottom: 50px;
   flex-direction: column;
@@ -9,7 +10,7 @@
 .ns__items {
   gap: 10px;
   flex-direction: column;
-  width: 1120px;
+  width: 82vw;
 }
 
 .ns__title {
@@ -34,46 +35,43 @@
 }
 
 .ns-container {
-  width: 1120px;
+  width: 82vw;
   justify-content: space-between;
   gap: 19px;
 }
 
 .ns-container__line-1 {
   width: 1px;
+  height: 80vh;
   top: 0px;
-  left: 32.2%;
-  height: 550px;
+  left: 26.5vw;
   background-color: white;
 }
 
 .ns-container__line-2 {
   width: 1px;
+  height: 80vh;
   top: 0px;
-  left: 67.5%;
-  height: 550px;
+  left: 55.5vw;
   background-color: white;
 }
 
 .ns-container__item {
-  width: 330px;
-  height: 550px;
-
+  width: 24vw;
+  height: 80vh;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 15px;
+  overflow: hidden;
 }
 
 .ns-container__imgs {
-  width: 330px;
-  height: 330px;
-
+  width: 24vw;
+  height: auto;
   overflow: hidden;
 }
 
 .ns-container__img {
-  width: 330px;
-  height: 330px;
+  width: 24vw;
+  height: auto;
   transition: transform 0.5s;
 }
 
@@ -82,22 +80,22 @@
 }
 
 .ns-container__txt {
-  width: 80%;
-
   text-align: left;
+  margin-top: 5px;
 }
 
 .ns-container__txt p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .ns-container__date {
-  width: 100%;
+  width: 100vw;
   gap: 8px;
+  margin-top: 8px;
 }
 
 .ns-container__datesideline {
-  height: 25px;
+  height: 20px;
   width: 2px;
 }
 
@@ -114,9 +112,9 @@
 
 .ns-container__btn {
   width: 100%;
-
   justify-content: end;
-  gap: 8px;
+  gap: 12px;
+  margin-top: 50px;
 }
 
 .ns-container__btn-txt:nth-child(1) span {
@@ -134,4 +132,133 @@
 
 .ns-container__btn-sideline--hovered {
   width: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  .ns {
+    display: block;
+  }
+
+  .newsshowcase {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .ns {
+    display: none;
+  }
+
+  .newsshowcase {
+    width: 100vw;
+    height: auto;
+    padding-bottom: 35px;
+    background-color: #f6f1ea;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .newsshowcase__header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .newsshowcase__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .newsshowcase__titlesideline div {
+    height: 24px;
+    width: 1px;
+    background-color: black;
+  }
+  .newsshowcase__titletext span {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.9rem;
+  }
+
+  .newsshowcase__heading h5 {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
+  .newsshowcase__main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .newsshowcase__items {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+    width: 95vw;
+  }
+
+  .newsshowcase__imgcontainer img {
+    height: auto;
+    width: 95vw;
+  }
+
+  .newsshowcase__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 8px;
+  }
+
+  .newsshowcase__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .newsshowcase__headline p {
+    font-size: 1.25rem;
+  }
+  .newsshowcase__date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .newsshowcase__datesideline {
+    height: 20px;
+    width: 1px;
+    background-color: black;
+  }
+  .newsshowcase__datetext {
+    font-family: 0.8rem;
+    color: lightgray;
+  }
+
+  .newsshowcase__btn-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .newsshowcase__btnline {
+    width: 25px;
+    height: 1px;
+    background-color: black;
+  }
 }

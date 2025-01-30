@@ -64,7 +64,47 @@ const MenuItem = ({ menuData = [] }) => {
       </div>
     ));
 
-  return <>{renderItems(menuData)}</>;
+  const renderItem = (menuData) => {
+    return menuData.map((item, index) => {
+      return (
+        <div key={index} className="d-flex flex-align-center items items-phone">
+          <div className="d-flex flex-align-center flex-content-end item">
+            <div className="item__title"> {item.heading}</div>
+            <div className="item__sideline"></div>
+          </div>
+          <div className="item">
+            <div className="itemc pos-relative">
+              <div className="item__img">
+                <img src={item.imgScr} />
+              </div>
+              <div className="d-flex flex-align-center flex-content-center item__img-title pos-absolute">
+                <span> {item.mtitle} </span>
+              </div>
+            </div>
+          </div>
+          <div className="d-flex flex-align-center flex-content-center item">
+            <div className="item__logo">
+              <img src={item.logo} />
+            </div>
+          </div>
+          <div className="item">
+            <div className="item__txt">
+              <p>{item.text}</p>
+            </div>
+          </div>
+          <br></br>
+          <br></br>
+        </div>
+      );
+    });
+  };
+
+  return (
+    <>
+      {renderItem(menuData)}
+      {renderItems(menuData)}
+    </>
+  );
 };
 
-export { MenuItem };
+export default MenuItem;

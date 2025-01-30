@@ -1,4 +1,4 @@
-import { MenuItem } from "./MenuItem";
+import MenuItem from "./MenuItem";
 import { Button } from "./Button";
 import "./StrassackerMenu.css";
 

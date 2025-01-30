@@ -25,11 +25,12 @@ export default function CompanyOverview() {
           <h2>Tradition und Moderne</h2>
         </div>
         <div className="co-main__left-txt">
-          <p>Als familiengeführtes Unternehmen in der vierten</p>
-          <p>Generation stehen wir für Tradition im Handwerk. Seit</p>
-          <p>über einem Jahrhundert widmen wir uns der Kunst des</p>
-          <p>Gusses und sind stolz darauf, unsere Leidenschaft von</p>
-          <p>Generation zu Generation weiterzugeben.</p>
+          <p>
+            Als familiengeführtes Unternehmen in der vierten Generation stehen
+            wir für Tradition im Handwerk. Seit über einem Jahrhundert widmen
+            wir uns der Kunst des Gusses und sind stolz darauf, unsere
+            Leidenschaft von Generation zu Generation weiterzugeben.
+          </p>
         </div>
         <div
           onMouseOut={handleMouseOut}

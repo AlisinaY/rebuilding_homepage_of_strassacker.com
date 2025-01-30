@@ -34,6 +34,55 @@ export default function NewsSchowcase() {
 
   return (
     <>
+      <div className="newsshowcase">
+        <div className="newsshowcase__header">
+          <div className="newsshowcase__title">
+            <div className="newsshowcase__titlesideline">
+              <div></div>
+            </div>
+            <div className="newsshowcase__titletext">
+              <span>über strassacker</span>
+            </div>
+          </div>
+          <div className="newsshowcase__heading">
+            <h5> Akutelles</h5>
+          </div>
+        </div>
+
+        <div className="newsshowcase__main">
+          {newsShocaseData.map((item) => {
+            return (
+              <div className="newsshowcase__items">
+                <div className="newsshowcase__imgcontainer">
+                  <img src={item.img} alt="" />
+                </div>
+                <div className="newsshowcase__footer">
+                  <div className="newsshowcase__item">
+                    <div className="newsshowcase__headeline">
+                      <p> {item.desc} </p>
+                    </div>
+                    <div className="newsshowcase__date">
+                      <div className="newsshowcase__datesideline">
+                        <div></div>
+                      </div>
+                      <div className="newsshowcase__datetext">
+                        <span> {item.date} </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="newsshowcase__item">
+                    <div className="newsshowcase__btn">
+                      <div className="newsshowcase__btn-container">
+                        <div className="newsshowcase__btnline"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
       <div className="d-flex flex-align-center ns">
         <div className="d-flex ns__items">
           <div className="d-flex flex-align-center ns__title">
@@ -55,7 +104,7 @@ export default function NewsSchowcase() {
               <div
                 onMouseOver={() => handleMouseOver(i)}
                 onMouseOut={handleMouseOut}
-                className="d-flex flex-align-center ns-container__item"
+                className="d-flex ns-container__item"
                 key={i}>
                 <div className="ns-container__imgs">
                   <img
