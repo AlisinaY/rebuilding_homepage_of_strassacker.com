@@ -92,3 +92,102 @@
 .gs__container-btn {
   margin-top: 120px;
 }
+
+@media screen and (max-width: 1023px) {
+  .gs__container {
+    gap: 40px;
+    background-image: url(https://www.strassacker.com/assets/teaser-gradient.webp);
+    padding: 0px 0px;
+  }
+  .gs__container-title {
+    display: none;
+  }
+  .gs__container-menu {
+    display: none;
+  }
+  .gs__container-btn {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .gs-main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .gs-main__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gs-main__title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .gs-main__sideline {
+    height: 25px;
+    width: 1px;
+    background-color: black;
+  }
+
+  .gs-main__titledesc span {
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+
+  .gs-main__heading h4 {
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  .gs-main__txt p {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+
+  .gs-main__imgcontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .gs-main__items {
+    width: 100vw;
+    margin-left: 20px;
+  }
+
+  .gs-main__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .gs-main__img--header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+
+  .gs-main__img--sideline {
+    width: 35px;
+    height: 2px;
+    background-color: black;
+  }
+
+  .gs-main__img--image img {
+    width: 95vw;
+    height: 70vh;
+  }
+}

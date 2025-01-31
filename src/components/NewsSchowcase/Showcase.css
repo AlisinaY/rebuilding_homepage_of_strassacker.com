@@ -194,7 +194,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
     align-items: center;
   }
 
@@ -216,6 +216,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     margin-bottom: 50px;
     margin-top: 8px;
   }
@@ -232,17 +233,17 @@
   .newsshowcase__date {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
 
   .newsshowcase__datesideline {
-    height: 20px;
+    height: 18px;
     width: 1px;
     background-color: black;
   }
   .newsshowcase__datetext {
-    font-family: 0.8rem;
-    color: lightgray;
+    font-size: 0.8rem;
+    color: gray;
   }
 
   .newsshowcase__btn-container {
