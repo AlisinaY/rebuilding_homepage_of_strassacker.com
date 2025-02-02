@@ -14,6 +14,9 @@ export default function CareerShowcase() {
     setHovered(null);
   }
 
+  const screenSize = window.innerWidth;
+  console.log(screenSize);
+
   return (
     <>
       {/* Career Show Case Main */}
@@ -31,7 +34,7 @@ export default function CareerShowcase() {
             </div>
           </div>
           <div className="cs-main__heading">
-            <h2 className="">Komm ins Team!</h2>
+            <h3 className="">Komm ins Team!</h3>
           </div>
         </div>
         {/* CS-Main Container*/}
@@ -53,8 +56,10 @@ export default function CareerShowcase() {
                 }}
                 onMouseOut={handleMouseOut}
                 key={index}
-                className={`d-flex flex-align-center cursor-pointer ${
-                  item.text === "Offene Stellen" ? "row-reverse" : ""
+                className={`d-flex flex-align-center test cursor-pointer ${
+                  item.text === "Offene Stellen" && screenSize > 1023
+                    ? "row-reverse"
+                    : ""
                 }`}>
                 <div className="cs-main__img-container">
                   <img
@@ -81,10 +86,16 @@ export default function CareerShowcase() {
                     </div>
                   </div>
                 </div>
+                {index !== 1 && (
+                  <div className="line d-flex">
+                    <div></div>
+                    <div></div>
+                  </div>
+                )}
               </div>
             );
           })}
-          <div className="pos-relative cs-main__middle">
+          <div className="pos-relative  cs-main__middle">
             <div className="pos-absolute cs-main__middleline"></div>
             <div className="pos-absolute cs-main__title"></div>
           </div>

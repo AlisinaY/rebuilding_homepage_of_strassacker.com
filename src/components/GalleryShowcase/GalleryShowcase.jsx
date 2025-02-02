@@ -45,7 +45,7 @@ export default function GalleryShowcase() {
               </div>
             </div>
             <div className="gs-main__heading">
-              <h4>Galerien Strassacker</h4>{" "}
+              <h4>Galerien Strassacker</h4>
             </div>
             <div className="gs-main__txt">
               <p>

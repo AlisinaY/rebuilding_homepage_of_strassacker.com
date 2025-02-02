@@ -14,13 +14,13 @@
 
 .cs-main__items-txt {
   letter-spacing: 2.4px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 100;
 }
 
-.cs-main__heading h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
+.cs-main__heading h3 {
+  font-size: 2.2rem;
+  font-weight: 50;
 }
 
 .cs-main__sideline {
@@ -92,12 +92,136 @@
 }
 
 .cs-main__title-sideline {
-  width: 25px;
+  width: 32px;
   height: 1.7px;
   background-color: black;
   transition: width 0.5s ease-in-out;
 }
 
 .cs-main__title-sideline--hovered {
-  width: 35px;
+  width: 37px;
+}
+
+@media screen and (max-width: 1023px) {
+  .cs-main {
+    gap: 30px;
+    margin: 50px 0px;
+  }
+  .cs-main__header {
+    width: 100vw;
+    padding-left: 20px;
+    gap: 15px;
+  }
+
+  .cs-main__items {
+    gap: 6px;
+  }
+
+  .cs-main__items-txt {
+    letter-spacing: 2.4px;
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+
+  .cs-main__heading h3 {
+    font-size: 2rem;
+    font-weight: 50;
+  }
+
+  .cs-main__sideline {
+    height: 26px;
+    width: 1px;
+    background-color: black;
+  }
+
+  .cs-main__container {
+    width: 100%;
+    gap: 40px;
+    margin-left: 0px;
+    flex-direction: column;
+  }
+
+  .test {
+    flex-direction: column;
+    width: 100%;
+    height: 65vh;
+  }
+
+  .cs-main__middle {
+    display: none;
+  }
+
+  .cs-main__title-heading h2 {
+    font-weight: 100;
+    font-size: 2rem;
+  }
+
+  .cs-main__item {
+    gap: 25px;
+    background-color: white;
+    width: 340px;
+    padding-left: 20px;
+    margin-top: 25px;
+  }
+
+  .cs-main__title-text {
+    gap: 7px;
+  }
+
+  .cs-main__title-txt {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .cs-main__title-sideline {
+    width: 32px;
+    height: 1.7px;
+    background-color: black;
+    transition: width 0.5s ease-in-out;
+  }
+
+  .cs-main__title-sideline--hovered {
+    width: 37px;
+  }
+
+  .cs-main__img-container {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center;
+    background-color: lightblue;
+    overflow: hidden;
+  }
+
+  .cs-main__img {
+    min-width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .cs-main__img--hovered {
+    transform: scale(1.03);
+  }
+
+  .cs-main__item {
+    width: 100%;
+    align-items: start;
+    margin-left: 20px;
+    gap: 8px;
+  }
+
+  .line {
+    margin-top: 30px;
+    width: 98vw;
+    background-color: white;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    justify-content: space-between;
+  }
+
+  .line div {
+    width: 48vw;
+    height: 1px;
+    background-color: black;
+  }
 }
