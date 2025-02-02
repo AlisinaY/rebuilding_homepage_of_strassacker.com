@@ -149,3 +149,106 @@
   color: gray;
   align-items: center;
 }
+
+@media screen and (min-width: 1023px) {
+  .f-phone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    display: none;
+  }
+
+  .f-phone {
+    margin: 80px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 95vw;
+  }
+
+  .f-phone__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 30px;
+  }
+  .f-phone__logo--img img {
+    width: 25vw;
+    height: 15vh;
+  }
+
+  .f-phone__companyname h6 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  .f-phone__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .f-phone__conatcts--address {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  .f-phone__contacts--elctaddress {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  .f-phone__contacts--street {
+    font-size: 0.9rem;
+  }
+
+  .f-phone__contacts--city {
+    font-size: 0.9rem;
+  }
+
+  .f-phone__contacts--mailaddress span {
+    font-size: 0.9rem;
+  }
+
+  .f-phone__contacts--phone span {
+    font-size: 0.9rem;
+  }
+
+  .f-phone__infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .f-phone__items {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    list-style-type: none;
+  }
+
+  .f-phone__link {
+    font-size: 0.8rem;
+  }
+
+  .f-phone__items--icons {
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+}
